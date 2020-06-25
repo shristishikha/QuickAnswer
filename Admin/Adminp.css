@@ -1,0 +1,229 @@
+﻿html
+{
+    height:100%;
+    width:100%;  
+}
+div
+{
+    float:left;      
+}
+.header
+        {
+            top:0;
+            overflow:hidden;
+            width:1365px;
+            padding:0 5% 0 5%;
+            border-radius:0 0 0 0;
+            background:rgb(32,66,153);
+            height:80px;
+            color:White;
+            position:fixed;
+        }
+        
+        
+        
+        
+/*Administrator Login Page*/
+
+#admlog
+{
+    position: absolute;
+    width:auto;
+    height:auto;
+    margin:22% 40% 0 50%;
+    background-color:Silver;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border: 7px 7px 7px 7px;
+    opacity:2;
+}
+
+/*Admin Page*/
+
+body
+{
+    width:1345px;
+}
+
+a
+{
+    text-decoration:blink;
+}
+
+.sidebar
+{
+    
+    position:fixed;
+    float:left;   
+    height:600px;
+    color:White;
+    background:rgb(40,40,40);
+    width:20%;
+    overflow:hidden
+}
+
+.sidebar table
+{
+    width:100%;          
+    padding:10%;        
+}
+.sidebar ul
+{
+    list-style-type:none;
+}
+.sidebar ul li a
+{ 
+    display:inline-block;
+	width:180px;
+	font-size:17px;
+	line-height:14px;
+	padding:18px 0 18px;
+	margin-top:0;
+	color:#a69eb0;
+	text-align:left;   
+}
+.sidebar li.active, .sidebar li:hover 
+{
+	color:#0f0f0f;
+	font-weight:bold;
+	
+}
+
+
+.active
+{
+    color: Blue;
+    background:#a69eb0;
+}
+
+
+/*Dashboard page rgba(0, 0, 0, 0.2)   rgba(0, 0, 0, 0.19)    0 4px 8px 0 #FFFFFF,*/
+
+#conbox
+{
+    float:left;
+    height:auto;
+    min-height:570px;
+    overflow:hidden;
+    min-width:925px;
+    background:rgb(212,219,229);
+    position:inherit;
+}
+.option
+{     
+  background:url(../images/block.jpg);
+  box-shadow: 0 6px 20px 0 #FFFFFF;
+  width: 200px;
+  height:200px;
+  vertical-align:middle;
+  margin: 22px 80px 50px 70px;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  padding: 0 15px 5px 13px;
+}
+.option table
+{
+    margin-top:15%;
+    border:2px solid white;
+    width:98%;
+}
+.option table tr td p , .option table tr td h1
+{
+    color:Silver;
+    text-align:center;
+}
+.Title
+{
+    height:10%;
+    width:100%;
+    padding-left:2%;
+}
+
+
+
+/*Gridview Design*/
+
+.Gview td
+{
+    padding: 5px;
+    height:10px;
+    word-wrap: break-word;
+}
+.Gview th
+{
+    padding: 5px;
+}
+.gheader
+{
+    background-color: #132020/*#646464*/;
+    font-family: Arial;
+    color: White;
+    border: none 0px transparent;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+.rows
+{
+    background-color:#f2f2f2;
+    font-family: Arial;
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    text-align: left;
+    border:1px solid #cccccc;
+    border-style:
+
+}
+.rows:hover
+{
+    background-color: #ffff80;
+    font-family: Arial;
+    color: #132020;
+    text-align: left;
+}
+.selectedrow
+{
+    background-color: #ff8000;
+    font-family: Arial;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+/*Admin Image*/
+.ppic
+{
+    border-width:thick;
+    border-radius:100% 100% 100% 100%;
+    -moz-border-radius:100% 100% 100% 100%;
+    -webkit-border-radius:100% 100% 100% 100%;
+}
+
+.htext2
+{
+    font-size:larger;
+    font-weight:200;    
+    
+}
+
+
+.textwrap
+{
+    white-space:pre-wrap;
+}
+
+.qun
+{
+float:left;width:925px;margin:0 100px 0 350px;
+}
+
+.pqun
+{
+float:left;width:1100px;margin:0 0 0 130px;
+}
