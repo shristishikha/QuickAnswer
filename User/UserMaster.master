@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>QuickAnswer</title>
+
+    <link href = "UserStyle.css" rel = "Stylesheet" type = "text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    
+    <!-- Morphbutton -->
+    <link href="../css/morphbutton.css" rel="stylesheet"/>
+    
+    <!-- Demo -->
+    <link href="../css/morphbutton.css" rel="stylesheet"/>
+    <script src="../js/jquery.js" type = "text/javascript"></script>
+    <script src="../js/jquery.morphbutton.js" type = "text/javascript"></script>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div style = "height:auto;width:1345px">
+
+        
+        <%--Header--%>
+        <div class="header" style = "position:fixed;">
+
+            <div style = "width:25%;color:white;margin:1% 0 0 0;padding:0 0 0 0;">
+                <font style = "font-size:42px">QuickAnswer</font>
+            </div>
+
+            <div style = "width:70%;margin:3% 0 0 0;float:right">
+
+                <%--Navigation Menu--%>
+                <div style = "float:right;padding:0 0 0 0;margin:0 0 0 0;">
+                    
+                    <asp:LinkButton ID="lbtnHome" runat="server" onclick="lbtnHome_Click" style = "font-size:large">Home</asp:LinkButton> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" data-target="#test" class="morphbutton big-button" style = "font-size:large">Sign In</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" onclick="btnSignUp_Click" Height="36px" Width="84px" class="btn btn-danger"/>
+
+                </div>
+                    
+                <%--Search Box--%>
+                <div style = "float:left;margin:0% 5% 0 5%;" id = "search">
+                    
+                    <asp:TextBox ID="txtsearch" runat="server" Height="32px" Width="421px" class="form-control" ToolTip="Search Question" CssClass = "searchbox"></asp:TextBox>
+                    <asp:Button ID="btnsearch" runat="server" Text="Search" onclick="search_Click" class="btn btn-danger"/>
+                
+                </div>
+                
+            </div>
+            
+        </div>          
+        
+        <%--Sign in form--%>
+        <div>
+
+            <div id="test" class="morphbutton-content">
+            
+                <div class="box">
+        
+                    <button type="button" class="morphbutton-close">X</button>
+                
+                    <form class="form-horizontal morphbutton-cascade" role="form">
+                    
+                        <center>
+                            <table cellpadding = "10px" style=" margin-left:100px">
+                                <tr>
+                                    <td><center> Login </center></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i><asp:Label ID="Label3" runat="server" Text="Enter Username :" ></asp:Label></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="txtUname" runat="server" class="form-control"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i><asp:Label ID="Label4" runat="server" Text="Enter Password :" ></asp:Label></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="txtPass" runat="server" TextMode="Password" class="form-control"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i><a href = "forgot.aspx" style="color:Blue"> Forgot Password?</a></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br/>                              
+                                        <asp:Button ID="btnSignin" runat="server" Text="SignIn" onclick="Button2_Click"  class="btn btn-danger"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i><a href = "SignUp.aspx" style="color:Blue"> Create an account...</a></i>
+                                    </td>
+                                </tr>
+                            </table>        
+                        </center>
+   
+                    </form>
+                </div>
+            
+            </div>
+
+        </div>
+        
+        <%--Middle Part/Content--%>
+        <div style = "float:left;height:auto;width:1100px;background:rgb(212,219,229);margin:80px 50px 0 120px;padding:0 0 0 0;min-height:559px;max-height:2500px;overflow:scroll">
+                
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+                
+        </div>
+        
+        <%--Footer--%>
+        <div class = "footer" >
+        
+            <center>
+                <table>
+                    <tr>
+                        <td class="tab" align="center">
+                            <a href="../Admin/Login.aspx" >Admin Login</a>
+                        </td>
+
+                        <td class="tab">
+                           <a href="About.aspx" >About</a>
+                        </td>
+                                                 
+                        <td class="tab">
+                            <a href= "Ufaq.aspx" >FAQ</a>
+                        </td>               
+                    </tr>
+                </table>
+            </center>
+
+        </div>
+    
+    </div>            
+    </form>
+</body>
+</html>
